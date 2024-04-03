@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #eff6b2,#ecb2d9)
+  }
+  .navbar {
+    background-color: #ff7070;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 5% 1% 5%;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .navbar a:hover{
+    cursor:text;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  .navbar a.active {
+    background-color: #555;
+    color: white;
+  }
+  .navbar .icon {
+    display: none;
+  }
+  .first-main-div {
+    display: flex;
+  }
+  .first-main-child1,
+  .first-main-child2 {
+    width: 50%;
+    /* padding: 0 10% 0 10%; */
+    overflow: hidden;
+    /* height: 80vh; */
+  }
+
+  .first-main-child1 {
+    display: flex;
+    align-items: center;
+    padding: 0 7% 0 7%;
+  }
+
+  .first-main-child2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .loremHeading {
+    font-size: 50px;
+    letter-spacing: 10px;
+  }
+
+  .loremDesc {
+    text-align: justify;
+  }
+
+  button {
+    height: 40px;
+    width: 200px;
+    background-color: #ff7070;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    margin-bottom: 15px;
+  }
+  button:hover{
+    cursor:text;
+  }
+  .second-child {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .second-child-imgDiv,
+  .second-childContentDiv {
+    width: 50%;
+    overflow: hidden;
+  }
+
+  .second-childContentDiv {
+    display: flex;
+    align-items: center;
+  }
+
+  .second-childContentDiv div {
+    background-color: #ff7070;
+    padding: 8%;
+    border-radius: 5px;
+  }
+
+  .second-child-imgDiv {
+    display: flex;
+    gap: 20px;
+    height: 28.3rem;
+    padding: 0 7%;
+  }
+
+  .imgDivs {
+    height: 48%;
+  }
+
+  .imgDivs:first-child {
+    margin-bottom: 15px;
+  }
+  .imgDivs img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .second-child-imgDiv2 {
+    width: 50%;
+    height: 100%;
+  }
+
+  .second-child-imgDiv2 img {
+    width: 100%;
+  }
+
+  .leftImgDiv {
+    width: 50%;
+  }
+  .arrow {
+    display: flex;
+    gap: 5px;
+    padding: 0% !important;
+  }
+  @media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {
+      display: none;
+    }
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+    .first-main-child1,
+    .first-main-child2 {
+      width: 100%;
+    }
+    .first-main-child1 {
+      padding: 0 0 0 0;
+    }
+    .navbar {
+      display: block;
+    }
+    .navbar.responsive {
+      position: relative;
+    }
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    .first-main-div {
+      display: block;
+    }
+
+    .second-child {
+      display: block;
+    }
+
+    .second-child-imgDiv,
+    .second-childContentDiv {
+      width: 100%;
+      overflow: hidden;
+    }
+    .second-child-imgDiv {
+      height: 100%;
+      display: block;
+      padding: 0%;
+    }
+
+    .second-child-imgDiv2 {
+      width: 100%;
+    }
+    .leftImgDiv {
+      width: 100%;
+    }
+  }

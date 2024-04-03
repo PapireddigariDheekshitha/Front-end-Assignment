@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="navbar" id="myNavbar">
+      <a href="#home">Home</a>
+      <a href="#order">Order</a>
+      <a href="#food">Food</a>
+      <a href="#restaurant">Restaurant</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#orders">Contact Us</a>
+      <a href="#img"><img src="./images/menu-bar.png" height="25px" width="25px" stye="position:absolute;top:10px;"></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        &#9776;
+      </a>
+    </div>
+    <div>
+      <div class="first-main-div">
+        <div class="first-main-child1">
+          <div>
+            <h1 class="loremHeading">LOREM IPSUM</h1>
+            <p class="loremDesc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vivamus
+              id est vitae dolor rhoncus tristique.Maecenas metus quam,
+              rhoncus euismod lorem in,sollicitudin viverra Donec
+              dictum luctus quam ut tristique.Curabitur nec faucibus purus.
+              Quisque congue sem nec justo mollis,in tincidunt erat pretium.
+              Sed pulvinar,massa ac porta viverra.
+            </p>
+            <button>Click Me</button>
+          </div>
+        </div>
+        <div class="first-main-child2">
+          <img src="./images/pexels-robin-stickel-70497.jpg" alt="" />
+        </div>
+      </div>
+      <div class="second-child">
+        <div class="second-child-imgDiv">
+          <div class="leftImgDiv">
+            <div class="imgDivs">
+              <img src="./images/pexels-rachel-claire-6752433.jpg" alt="" />
+            </div>
+            <div class="imgDivs">
+              <img src="./images/pexels-eva-bronzini-6141651.jpg" alt="" />
+            </div>
+          </div>
+          <div class="second-child-imgDiv2">
+            <img src="./images/pexels-mister-mister-3434523.jpg" alt="" />
+          </div>
+        </div>
+        <div class="second-childContentDiv">
+          <div>
+            <p>LOREM IPSUM</p>
+            <h1 style="letter-spacing: 2px;">LOREM IPSUM SET ADEMIR</h1>
+            <div class="arrow">
+              <p>Click</p>
+              <img src="./images/icons8-arrow-30.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myNavbar");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+  </body>
+</html>
